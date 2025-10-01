@@ -24,8 +24,8 @@ This is a **console-based Java application** to help astronauts manage their dai
 |---------|------|----------|
 | Builder | Creational | `TaskBuilder` simplifies creation of `Task` objects with multiple fields. |
 | Strategy | Behavioral | `ConflictResolutionStrategy` interface allows conflict resolution to be switched at runtime (`RescheduleStrategy` or `RejectStrategy`). |
-| Singleton (Suggested) | Creational | `ScheduleManager` acts as the central manager of all tasks. |
-| Observer (Optional) | Behavioral | Can be added to notify users of conflicts or updates (not implemented in current version). |
+| Singleton  | Creational | `ScheduleManager` acts as the central manager of all tasks. |
+| Observer  | Behavioral | Can be added to notify users of conflicts or updates (not implemented in current version). |
 
 ---
 
