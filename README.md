@@ -45,3 +45,49 @@ This is a **console-based Java application** to help astronauts manage their dai
 
 ---
 
+# Java Multi-Terminal Chat Application
+
+## Overview
+
+This is a **console-based chat application** built in plain Java that allows multiple users to communicate in **real-time**.
+
+The application supports:
+
+* **Chat rooms** with optional password protection and user limits.
+* **Private messaging** between users.
+* **Message history** for each room.
+* **Active users list** in each room.
+* Multi-terminal support (clients can run in separate terminals).
+* **Observer Pattern** for real-time message updates.
+* **Adapter Pattern** for flexible client communication.
+* **Exception handling** and logging for robustness.
+
+---
+
+## Features
+
+1. **Room Management**
+
+   * Create a room with optional **password** and **max users**.
+   * Join existing rooms with the correct password.
+
+2. **Messaging**
+
+   * **Room messages:** send messages visible to all users in a room.
+   * **Private messages:** send direct messages to a specific user.
+   * **Message history:** new users joining a room can see past messages.
+
+3. **User Management**
+
+   * View **active users** in a room.
+   * Exit the application cleanly.
+
+---
+
+## Design Patterns Used
+
+* **Observer Pattern:** `MessageObserver` updates users in real-time whenever a new message is sent in a room.
+* **Adapter Pattern:** `ClientAdapter` and `SocketAdapter` abstract message sending, allowing different communication protocols.
+* **Singleton Pattern:** `ChatRoomManager` ensures a single instance manages all chat rooms.
+
+---
